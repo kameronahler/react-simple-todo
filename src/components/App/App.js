@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import root from 'react-shadow'
 import Form from '../Form/Form'
 import List from '../List/List'
