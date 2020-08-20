@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
-    "react-shadow": "^18.3.0"
+    "react-shadow": "^18.3.0",
+    "uuid": "^8.3.0"
   }
 }
