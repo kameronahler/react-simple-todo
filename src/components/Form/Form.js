@@ -5,7 +5,7 @@ import { v4 as uuid } from 'uuid'
 export default function Form({ action }) {
   const NEW_ITEM_TEMPLATE = {
     completed: false,
-    id: uuid(),
+    key: uuid(),
     label: '',
   }
   const [inProgressItem, setInProgressItem] = useState(NEW_ITEM_TEMPLATE)

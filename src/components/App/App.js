@@ -19,7 +19,7 @@ export default function App() {
   return (
     <root.div>
       <Form action={addItem} />
-      <List />
+      <List allItems={allItems} />
     </root.div>
   )
 }
