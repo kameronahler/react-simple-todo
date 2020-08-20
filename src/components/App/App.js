@@ -23,14 +23,7 @@ export default function App() {
       }
     })
     setAllItems(newArr)
-    console.log('success', allItems)
   }
-
-  // debug
-  useEffect(() => {
-    console.log('allItems:')
-    console.log(allItems)
-  })
 
   return (
     <root.div>
