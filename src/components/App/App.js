@@ -10,6 +10,22 @@ export default function App() {
     setAllItems([newItem, ...allItems])
   }
 
+  const changeItem = (e) => {
+    const newArr = allItems.map((el) => {
+      if (e.currentTarget.id === el.id && el.completed === true) {
+        el.completed = false
+        return el
+      } else if (e.currentTarget.id === el.id && el.completed === false) {
+        el.completed = true
+        return el
+      } else {
+        return el
+      }
+    })
+    setAllItems(newArr)
+    console.log('success', allItems)
+  }
+
   // debug
   useEffect(() => {
     console.log('allItems:')
@@ -19,7 +35,7 @@ export default function App() {
   return (
     <root.div>
       <Form action={addItem} />
-      <List allItems={allItems} />
+      <List allItems={allItems} changeItem={changeItem} />
     </root.div>
   )
 }

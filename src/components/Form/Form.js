@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import root from 'react-shadow'
 import { v4 as uuid } from 'uuid'
 
 export default function Form({ action }) {
   const NEW_ITEM_TEMPLATE = {
     completed: false,
+    id: uuid(),
     key: uuid(),
     label: '',
   }
@@ -22,12 +23,6 @@ export default function Form({ action }) {
       setInProgressItem(NEW_ITEM_TEMPLATE)
     }
   }
-
-  // debug
-  useEffect(() => {
-    console.log('inProgressItem:')
-    console.log(inProgressItem)
-  })
 
   return (
     <root.div>
