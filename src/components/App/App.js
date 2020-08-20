@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import root from 'react-shadow'
 import Form from '../Form/Form'
+import List from '../List/List'
 
 export default function App() {
   const [allItems, setAllItems] = useState([])
@@ -18,6 +19,7 @@ export default function App() {
   return (
     <root.div>
       <Form action={addItem} />
+      <List />
     </root.div>
   )
 }
